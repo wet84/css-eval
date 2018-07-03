@@ -1,0 +1,152 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* start of framework */
+
+/* base defitions */
+body {
+    padding: 50px 0px 60px 0px;
+}
+
+/* header definitions */
+.ui-page-theme-a header.ui-bar-inherit {
+    background: #333;
+    border: 0px none;
+}
+header {
+    opacity: 1;
+    font-size: initial;
+    min-height: 50px;
+}
+header #row {
+    display: flex;
+}
+header #left-menu,
+header #right-menu {
+    display: block;
+    line-height: 52px;
+    text-align: center;
+    font-size: 19px;
+    outline: none;
+    color: #fff;
+    flex: 0 0 54px;
+    box-sizing: border-box;
+    max-height: 50px;
+}
+header #left-menu a,
+header #right-menu a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: none;
+}
+header #brand {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 32px;
+    text-shadow: none;
+}
+/* main definitions */
+main {
+    min-height: 5000px;
+    background: #000000;
+    background: -moz-linear-gradient(top, #ffffff 10%, #efefef 100%);
+    background: -webkit-linear-gradient(top, #ffffff 10%,#efefef 100%);
+    background: linear-gradient(to bottom, #ffffff 10%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+}
+
+/* aside definitions */
+aside {
+    display: none;
+}
+
+/* footer definitions */
+footer.ui-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 201;
+    background: rgba(240,240,240,.90);
+}
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+footer > ul li {
+    position: relative;
+    flex: 1;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-right: 1px solid #dddddd;
+}
+footer > ul li:last-of-type {
+    border-right: 0px none;
+}
+footer > ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+footer > ul li a > i {
+    position: relative;
+    font-size: 20px;
+    display: block;
+}
