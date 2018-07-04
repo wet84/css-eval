@@ -21,4 +21,4 @@ In the "source" folder you will find an example PSD for mobile devices. In this 
 
 ## Questions?
 
-Feel free to contact our lead frontend-developer via skype pierre.bergx2 or via email [pierre@bergx2.de](mailto:pierre@bergx2.de).	
+Feel free to contact our lead frontend-developer via email [pierre@bergx2.de](mailto:pierre@bergx2.de).	
