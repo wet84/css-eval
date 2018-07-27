@@ -12,6 +12,25 @@ In the "source" folder you will find an example PSD for mobile devices. In this 
 - Push the changes after you complete your work.
 
 
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<thead>
+		<tr>
+			<th>Current state</th>
+			<th>Expected result</th>
+		</tr>
+	</thead>
+	<tr>
+		<td align="center">
+			<img src="https://github.com/Bergx2/css-eval/raw/master/sources/current-state.png" />
+		</td>
+		<td>
+			<img src="https://github.com/Bergx2/css-eval/raw/master/sources/expected-result.jpg" />
+		</td>
+	</tr>
+</table>
+
+
+
 ## Chrome extensions we suggest
 
 - [PixelParallel by htmlBurger](https://chrome.google.com/webstore/detail/pixelparallel-by-htmlburg/iffnoibnepbcloaaagchjonfplimpkob)
