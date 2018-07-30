@@ -51,13 +51,14 @@ body {
 
 /* header definitions */
 .ui-page-theme-a header.ui-bar-inherit {
-    background: #333;
+    /* background: #333; */
     border: 0px none;
 }
 header {
     opacity: 1;
     font-size: initial;
     min-height: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 header #row {
     display: flex;
@@ -65,14 +66,15 @@ header #row {
 header #left-menu,
 header #right-menu {
     display: block;
-    line-height: 52px;
+    /* line-height: 52px; */
+    line-height: 110px; 
     text-align: center;
     font-size: 19px;
     outline: none;
     color: #fff;
     flex: 0 0 54px;
     box-sizing: border-box;
-    max-height: 50px;
+    /* max-height: 50px; */
 }
 header #left-menu a,
 header #right-menu a {
@@ -149,4 +151,105 @@ footer > ul li a > i {
     position: relative;
     font-size: 20px;
     display: block;
+}
+
+
+
+/* ************************ my style ********************** */
+.header-top {
+    background: #333;
+    height: 100px;
+    border-bottom: 12px solid #FAA21B;
+}
+
+.fa-angle-double-left,
+.fa-angle-double-right {
+    font-size: 36px;
+}
+
+.fa-galactic-republic {
+    font-size: 65px;
+}
+
+.header-bottom .group-name-section {
+    background-color: #ffffff;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-name-section .center-text {
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.group-name-section .arrow-left {
+	background-image: url("../img/chevron-small-left.svg");
+	width: 40px;
+    height: 40px;
+}
+
+.group-name-section .star-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/star.svg");
+    fill: #B6B6B6;
+    margin-right: 10px;
+}
+
+.arrow-left,
+.center-text,
+.star-icon {
+ display: inline-block;
+}
+
+.command-name-section {
+    height: 100px;
+    background-color: #C1C1C1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:2px solid #B5B5B5;
+    border-bottom:2px solid #B5B5B5;
+    color: #000;
+    font-size: 18px;
+}
+
+.score-section {
+    height:140px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background: url(../img/dot-bg.png) center no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.score {
+    max-width: 200px;
+    position: relative;
+}
+
+.score span {
+    font-size: 90px;
+    font-family: sans-serif;
+    padding: 0 10px;
+
+}
+
+.score-section .score .num-left,
+.score-section .score .num-right {
+    font-size: 110px;
+    display: inline-block;
+}
+
+.score-section .score .score-info{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    /* padding: 0 30px; */
+    transform: translate(-50%, -50%);
 }
