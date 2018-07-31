@@ -58,7 +58,6 @@ header {
     opacity: 1;
     font-size: initial;
     min-height: 50px;
-    font-family: 'Open Sans', sans-serif;
 }
 header #row {
     display: flex;
@@ -99,6 +98,8 @@ main {
     background: -webkit-linear-gradient(top, #ffffff 10%,#efefef 100%);
     background: linear-gradient(to bottom, #ffffff 10%,#efefef 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+    font-family: 'Asap Condensed', sans-serif;
+    padding: 100px 0 0 !important;
 }
 
 /* aside definitions */
@@ -156,10 +157,18 @@ footer > ul li a > i {
 
 
 /* ************************ my style ********************** */
+
+.orange-stripe {
+    background: url("../img/Orange-Stripe.png") 50% 100% no-repeat;
+    width: 100%;
+    height: 12px;
+    background-color: orange;
+}
 .header-top {
     background: #333;
     height: 100px;
-    border-bottom: 12px solid #FAA21B;
+    /* border-bottom: 12px solid #FAA21B; */
+    /* background-image: url("../img/White-Border-top.png"); */
 }
 
 .fa-angle-double-left,
@@ -171,7 +180,7 @@ footer > ul li a > i {
     font-size: 65px;
 }
 
-.header-bottom .group-name-section {
+.group-name-section {
     background-color: #ffffff;
     height: 55px;
     display: flex;
@@ -180,8 +189,7 @@ footer > ul li a > i {
 }
 
 .group-name-section .center-text {
-    font-size: 16px;
-    letter-spacing: -1px;
+    font-size: 18px;
 }
 
 .group-name-section .arrow-left {
@@ -212,8 +220,8 @@ footer > ul li a > i {
     align-items: center;
     border-top:2px solid #B5B5B5;
     border-bottom:2px solid #B5B5B5;
-    color: #000;
-    font-size: 16px;
+    /* color: #000; */
+    font-size: 22px;
 }
 
 .score-section {
@@ -227,26 +235,26 @@ footer > ul li a > i {
     background-color: #fff;
 }
 
-.score {
+.score-centered {
     max-width: 250px;
     position: relative;
     margin-top: 10px;
 }
 
-.score span {
+.score-centered span {
     font-size: 90px;
     font-family: sans-serif;
     padding: 0 30px;
 
 }
 
-.score-section .score .num-left,
-.score-section .score .num-right {
+.score-section .score-centered .num-left,
+.score-section .score-centered .num-right {
     font-size: 110px;
     display: inline-block;
 }
 
-.score-section .score .score-info{
+.score-section .score-centered .score-info{
     position: absolute;
     top: 0;
     left: 50%;
@@ -259,9 +267,16 @@ footer > ul li a > i {
     background-color: #fff;
     border-top: 1px solid #B5B5B5;
     border-bottom: 1px solid #B5B5B5;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
 }
+
+.additional-info-section>a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 100;
+}
+
 
 .live-stream,
 .live-tracker,
@@ -299,32 +314,36 @@ footer > ul li a > i {
     display: inline-block;
 }
 
-.grey-row {
+/*row */
+
+.grey-bg {
+    background-color: #EEEEEE;  
+}
+
+.white-bg {
+    background-color: #fff; 
+}
+
+.buttons-row {
     display: flex;
     width: 100%;
-    background-color: #EEEEEE;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #B5B5B5;
 }
-.grey-row.grey-row .section-text {
-    width: 20%;
+.buttons-row .section-text {
+    width: 25%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: #8C8C8C;
 }
 
-.grey-row .section-text p {
+.buttons-row .section-text p {
     margin: 0;
     padding-left: 10px;
 }
-    
-.section-button__cell-text p {
-    margin: 0;
-    padding-left: 10px;
-}
-    
-
+        
 .section-cell {
-     width: 80%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
 }
@@ -337,28 +356,12 @@ footer > ul li a > i {
     color: #000;
 }
 
-.custom-button {
+.cell .custom-button {
     width: 150px;
-    padding: 10px;
-    outline: none;
-    margin: 5px;
-}
-
-.custom-button>span:nth-child(1) {
-    float: left;
-}
-
-.custom-button>span:nth-child(2) {
-    float: right;
-    font-weight: bold;
-}
-
-.mybutton {
-    width: 150px;
-    padding: 10px;
+    padding: 15px 5px;
     box-sizing: border-box;
     outline: none;
-    margin: 5px;
+    margin: 10px 2px;
     box-shadow:inset 0px 1px 0px 0px #ffffff;
     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
     background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
@@ -371,24 +374,49 @@ footer > ul li a > i {
     font-size: 18px;
 }
 
-.mybutton:active {
+.cell .custom-button:active {
     position:relative;
     top:1px;
     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
     background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
 }
 
-.mybutton>span:nth-child(1) {
+.cell .custom-button>span:nth-child(1) {
     float: left;
+    color:#828282;
+    font-weight: 100;
 }
 
-.mybutton>span:nth-child(2) {
+.cell .custom-button>span:nth-child(2) {
     float: right;
     font-weight: bold;
 }
 
+.section-cell .cell .cell-text {
+    box-shadow: none;
+    background: none;
+    border-color: transparent;
+    font-weight: 100;
+    color: #8C8C8C;
+}
+
+.section-cell .cell .cell-text:active {
+    top: 0;
+    background: none;
+}
+/* end row */
+
 @media only screen and (max-width: 375px) {
-    .mybutton {
+    .additional-info-section {
+        font-size: 14px;
+    }
+
+    .cell .custom-button {
         max-width: 80px;
+        font-size: 14px;
+    }
+
+    .section-text>p {
+        font-size: 14px;
     }
 }

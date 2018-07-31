@@ -8,7 +8,7 @@
   <meta name="description" content="CSS Testimonial">
   <meta name="author" content="Bergx2 GmbH">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
 
   
 
@@ -20,7 +20,6 @@
 <body>
 	<div id="wrapper" data-role="page" data-theme="a">
 		<header data-role="header" data-position="fixed" data-fullscreen="true">
-			<!-- header-top -->
 			<div id="row" class="header-top">
 				<div id="left-menu">
 					<a href="#left">
@@ -36,8 +35,15 @@
 					</a>
 				</div>
 			</div>
-			<!-- header-bottom -->
-			<div class="header-bottom">
+		</header>
+		<aside id="left" data-role="panel" data-position="left" data-display="push">
+			<a href="#" data-rel="close">Close panel</a>
+		</aside>
+		<aside id="right" data-role="panel" data-position="right" data-display="push">
+			<a href="#" data-rel="close">Close panel</a>
+		</aside>
+		<main data-role="content" data-enhance="false">
+			<div class="orange-stripe"></div>
 				<div class="group-name-section">
 					<a href="javascript:void(0);" class="arrow-left"></a>
 					<div class="center-text">
@@ -50,7 +56,7 @@
 					<div class="command-name-right">FC Bayern Munchen</div>
 				</div>
 				<div class="score-section">
-					<div class="score">
+					<div class="score-centered">
 						<div class="num-left">1</div>
 						<span>:</span>
 						<div class="num-right">0</div>
@@ -58,43 +64,135 @@
 					</div>
 				</div>
 				<div class="additional-info-section">
-					<div class="live-stream">
+					<a href="javascript:void(0);" class="live-stream">
 						<p>LIVE STREAM</p>
-					</div>
-					<div class="live-tracker">
+					</a>
+					<a href="javascript:void(0);" class="live-tracker">
 						<p>LIVE TRACKER</p>
-					</div>
-					<div class="statistics">
+					</a>
+					<a href="javascript:void(0);" class="statistics">
 						<p>STATISTIKEN</p>
+					</a>
+				</div>
+
+				<div class="buttons-row grey-bg">
+					<div class="section-text">
+						<p>TIPP</p>
+						<p>3</p>
+					</div>
+					<div class="section-cell">
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>1</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>X</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>2</span><span>3.80</span></a>
+						</div>
 					</div>
 				</div>
 
-				<div class="grey-row">
-						<div class="section-text">
-							<p>TIPP</p>
-							<p>3</p>
+				<div class="buttons-row white-bg">
+					<div class="section-text">
+						<p>Restzeitwette</p>
+						<p>(0:0)</p>
+					</div>
+					<div class="section-cell">
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>1</span><span>3.80</span></a>
 						</div>
-						<div class="section-cell">
-							<div class="cell">
-								<a href="javascript:void(0);" class="mybutton"><span>1</span><span>3.80</span></a>
-							</div>
-							<div class="cell">
-								<a href="javascript:void(0);" class="mybutton"><span>1</span><span>3.80</span></a>
-							</div>
-							<div class="cell">
-								<a href="javascript:void(0);" class="mybutton"><span>1</span><span>3.80</span></a>
-							</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>X</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>2</span><span>3.80</span></a>
 						</div>
 					</div>
-			</div>
-		</header>
-		<aside id="left" data-role="panel" data-position="left" data-display="push">
-			<a href="#" data-rel="close">Close panel</a>
-		</aside>
-		<aside id="right" data-role="panel" data-position="right" data-display="push">
-			<a href="#" data-rel="close">Close panel</a>
-		</aside>
-		<main data-role="content" data-enhance="false">
+				</div>
+
+				<div class="buttons-row grey-bg">
+					<div class="section-text">
+						<p>Über/Unter</p>
+						<p>0.5</p>
+					</div>
+					<div class="section-cell">
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>1</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>X</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>2</span><span>3.80</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="buttons-row white-bg">
+					<div class="section-text">
+						<p>Genaues  Ergebnis</p>
+					</div>
+					<div class="section-cell">
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>1:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>1:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>1:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>1:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>1:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>1:0</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>0:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:0</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:0</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>0:1</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:1</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:1</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:1</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:1</span><span>3.80</span></a>
+							<a href="javascript:void(0);" class="custom-button"><span>0:1</span><span>3.80</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="buttons-row grey-bg">
+					<div class="section-text">
+						<p>In welcher HZ  werden mehr  Tore erzielt?</p>
+					</div>
+					<div class="section-cell">
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>1. HZ</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>X</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>2. HZ</span><span>3.80</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="buttons-row white-bg">
+					<div class="section-text">
+						<p>Restzeitwette</p>
+						<p>(0:0)</p>
+					</div>
+					<div class="section-cell">
+						<div class="cell">
+							<!-- <p class="cell-text">Max Kruse</p> -->
+							<a href="javascript:void(0);" class="custom-button cell-text">Max Kruse</a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>X</span><span>3.80</span></a>
+						</div>
+						<div class="cell">
+							<a href="javascript:void(0);" class="custom-button"><span>2</span><span>3.80</span></a>
+						</div>
+					</div>
+				</div>
 		</main>
 		<footer data-role="footer">
 	</div>
